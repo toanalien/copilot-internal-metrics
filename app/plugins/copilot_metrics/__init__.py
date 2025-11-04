@@ -1,0 +1,1 @@
+# Package marker for copilot_metrics plugin

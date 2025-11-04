@@ -5,4 +5,5 @@ POSTGRES_DB=dbname
 APP_NAME=FastAPI Docker App
 DEBUG=true
 PYTHONPATH=/app
-PLUGINS_ENABLED=hello,analytics,items
+PLUGINS_ENABLED=hello,analytics,items,copilot_metrics
+COPILOT_METRICS__TOKEN_SECRET=

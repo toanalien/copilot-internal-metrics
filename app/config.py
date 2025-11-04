@@ -22,3 +22,6 @@ DEBUG: bool = _get_bool(os.getenv("DEBUG"), default=False)
 PLUGINS_ENABLED: list[str] = [
     p.strip() for p in os.getenv("PLUGINS_ENABLED", "hello,analytics").split(",") if p.strip()
 ]
+
+# Secret used to encrypt GitHub access tokens (hex, openssl rand -hex 32)
+COPILOT_METRICS__TOKEN_SECRET: str | None = os.getenv("COPILOT_METRICS__TOKEN_SECRET")
