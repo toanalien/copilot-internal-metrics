@@ -1,0 +1,1 @@
+"""Core system for modular plugin architecture."""
